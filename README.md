@@ -8,4 +8,8 @@ free Movies & TV Shows team using the TMDB API.
 2. Replace the API key if needed with your own TMDB key.
 3. Run a local web server in the project folder.
 
+##NETLIFY LINK
+
+https://vocal-biscotti-05fc0b.netlify.app/
+
 
