@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>321movies</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="config.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <h1>321movies</h1>
+        </div>
+      </header>
+
+      <div class="controls">
+        <input
+          id="searchInput"
+          class="search-input"
+          type="text"
+          placeholder="Search movies..."
+          aria-label="Search movies"
+        />
+      </div>
+
+      <section class="hero-strip" aria-label="Featured movies">
+        <div class="hero-track" id="heroTrack"></div>
+      </section>
+
+      <main class="main-panel">
+        <aside class="genre-panel">
+          <h2>Genres</h2>
+          <button class="genre-btn active" data-genre="28" type="button">Action</button>
+          <button class="genre-btn" data-genre="35" type="button">Comedy</button>
+          <button class="genre-btn" data-genre="18" type="button">Drama</button>
+          <button class="genre-btn" data-genre="27" type="button">Horror</button>
+          <button class="genre-btn" data-genre="878" type="button">Sci-Fi</button>
+          <button class="genre-btn" data-genre="10749" type="button">Romance</button>
+        </aside>
+
+        <section class="content">
+          <div class="category-row" aria-label="Movie categories">
+            <button class="category-btn active" data-category="popular" type="button">Popular</button>
+            <button class="category-btn" data-category="top_rated" type="button">Top Rated</button>
+            <button class="category-btn" data-category="upcoming" type="button">Upcoming</button>
+            <button class="category-btn" data-category="now_playing" type="button">Now Playing</button>
+          </div>
+
+          <p id="resultsCount" class="results-text">Loading...</p>
+          <section id="movieGrid" class="movie-grid" aria-live="polite"></section>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

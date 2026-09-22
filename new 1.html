@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Night</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="config.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">🎬</span>
+          <h1>Movie Night</h1>
+        </div>
+
+        <div class="controls">
+          <input
+            id="searchInput"
+            class="search-input"
+            type="text"
+            placeholder="Search movies..."
+            aria-label="Search movies"
+          />
+
+          <select id="categorySelect" class="filter-select" aria-label="Select movie category">
+            <option value="popular">Popular</option>
+            <option value="top_rated">Top Rated</option>
+            <option value="upcoming">Upcoming</option>
+            <option value="now_playing">Now Playing</option>
+          </select>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="stats">
+          <div class="stat-card">
+            <span>Results</span>
+            <strong id="resultsCount">Loading...</strong>
+          </div>
+        </section>
+
+        <section id="movieGrid" class="movie-grid" aria-live="polite"></section>
+      </main>
+    </div>
+  </body>
+</html>
